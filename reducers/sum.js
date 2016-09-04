@@ -8,6 +8,7 @@ function sum(currentState, action){
     switch (action.type) {
         case 'SUM': // look at Note2.1
         nextState = parseInt(action.a) + parseInt(action.b)
+       // funcWithError();
         return nextState;// Note2.2
         
         default:
@@ -16,4 +17,7 @@ function sum(currentState, action){
     }
     
    
+}
+function funcWithError(){
+    throw Error('error');
 }

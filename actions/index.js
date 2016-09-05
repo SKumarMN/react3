@@ -16,7 +16,7 @@ var getSum = function(a, b){
 }
 
 var asyncIncrease = function(dispatch,state){
-    dispatch({ type: 'LOAD' });
+    dispatch(load);
     _fakeServerApi.increaseCount(state.count, function(data){
         //console.log(data);
         dispatch({ type: 'INCREMENT' })

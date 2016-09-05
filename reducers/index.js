@@ -1,7 +1,7 @@
 
 
 function combineReducer(currentState, action) {
-    var DEFAULT_STATE = {count:0, sum:3};
+    var DEFAULT_STATE = {count:{result:0,loading:false}, sum:3};
     var nextState = Object.assign({},currentState);
   
     nextState = {
